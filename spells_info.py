@@ -18,6 +18,12 @@ def get_spell(spell_id):
     
     return spells[spell_id]['name']
 
+def get_spell_id(name):
+    
+    for spell_id in spells:
+        if spells[spell_id]['name'] == name:
+            return spell_id
+
 def all_spells_names():
     """
     Return all spells

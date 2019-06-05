@@ -38,7 +38,15 @@ def champion_name(champion_id):
     Retorna o nome do campeão
     """
     return champions_info[champion_id]['name']
-    
+
+def get_champion_id(champion_name):
+    """
+    Retorna o nome do campeão
+    """
+    for champion_id in champions_info:
+        if champions_info[champion_id]['name'] == champion_name:
+            return champion_id
+
 def all_champions_tags():
     """
     Retorna uma lista contendo todas as tags possiveis
